@@ -1,32 +1,70 @@
 body{
     margin: 0;
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(233, 233, 233);
 }
 
+/* HEADER */
+
 header{
-    background-color: gray;
+    background-color: rgb(243, 243, 243);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 5rem;
 }
 
 .craiglogo{
+    height: 4rem;
+    margin-left: 2rem;
+}
+
+.search{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    height: 1.5rem;
     width: 10rem;
-    height: 5rem;
-    margin: 10px;
+    margin-right: 0.5rem;
 }
 
 .header-right ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+    align-items: center;
+}
+
+.header-right li{
+    padding: 5px;
     list-style: none;
     display: flex;
     flex-direction: row;
 }
+/* HEADER */
 
-.header-right li{
-    padding: 1rem;
-}
+
+/* FOOTER */
 
 footer{
     background-color: blue;
 }
+
+/* FOOTER */
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: px) {
+    
+}
+
+@media only screen and (min-width: px) {
+    
+}
+
+@media only screen and (min-width: px) {
+    
+}
+
+
+/* MEDIA QUERIES */
