@@ -1,11 +1,11 @@
-body{
+body {
     margin: 0;
     background-color: rgb(233, 233, 233);
 }
 
-/* HEADER */
+/* ---- HEADER ---- */
 
-header{
+header {
     background-color: rgb(243, 243, 243);
     display: flex;
     flex-direction: row;
@@ -14,57 +14,70 @@ header{
     height: 5rem;
 }
 
-.craiglogo{
-    height: 4rem;
-    margin-left: 2rem;
+
+.nav-right {
+    display: none;
 }
 
-.search{
-    background-color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 15px;
-    height: 1.5rem;
-    width: 10rem;
-    margin-right: 0.5rem;
+.craiglogo {
+    height: 3rem;
+    margin-left: 1rem;
 }
 
-.header-right ul{
-    display: flex;
-    flex-direction: row;
-    margin-right: 2rem;
-    align-items: center;
+.menu {
+    margin: 1rem;
 }
 
-.header-right li{
-    padding: 5px;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-}
-/* HEADER */
+/* ---- HEADER ---- */
 
 
-/* FOOTER */
+/* ---- FOOTER ---- */
 
-footer{
+footer {
     background-color: blue;
 }
 
-/* FOOTER */
+/* ---- FOOTER ---- */
 
-/* MEDIA QUERIES */
+/* ---- MEDIA QUERIES ---- */
 
-@media only screen and (min-width: px) {
-    
+@media only screen and (min-width: 800px) {
+    .search {
+        background-color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 15px;
+        height: 1.5rem;
+        width: 10rem;
+        margin-right: 0.5rem;
+    }
+
+    .header-right ul {
+        display: flex;
+        flex-direction: row;
+        margin-right: 2rem;
+        align-items: center;
+    }
+
+    .header-right li {
+        padding: 5px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .craiglogo {
+        height: 4rem;
+        margin-left: 2rem;
+    }
+
+    .menu {
+        display: none;
+    }
 }
 
-@media only screen and (min-width: px) {
-    
-}
+@media only screen and (min-width: px) {}
 
-@media only screen and (min-width: px) {
-    
-}
+@media only screen and (min-width: px) {}
 
 
-/* MEDIA QUERIES */
+/* ---- MEDIA QUERIES ---- */
