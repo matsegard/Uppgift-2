@@ -3,6 +3,11 @@ body {
     background-color: rgb(233, 233, 233);
 }
 
+ul{
+    list-style: none;
+    display: flex;
+}
+
 /* ---- HEADER ---- */
 
 header {
@@ -20,21 +25,52 @@ header {
 }
 
 .craiglogo {
-    height: 3rem;
+    height: 3.5rem;
     margin-left: 1rem;
 }
 
-.menu {
-    margin: 1rem;
+.menu{
+    margin-right: 1rem;
+}
+
+.icon{
+    color: rgb(88, 88, 88);
+    padding: 5px;
+}
+
+.icon:hover{
+    color: #6A2983;
 }
 
 /* ---- HEADER ---- */
 
 
+/* ---- MAIN CONTENT ---- */
+
+.main-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav li{
+    padding: 10px;
+}
+
+.main-nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---- MAIN CONTENT ---- */
+
+
+
 /* ---- FOOTER ---- */
 
 footer {
-    background-color: blue;
+    background-color: rgb(167, 167, 167);
 }
 
 /* ---- FOOTER ---- */
@@ -58,9 +94,8 @@ footer {
         align-items: center;
     }
 
-    .header-right li {
+    .header-right li{
         padding: 5px;
-        list-style: none;
         display: flex;
         flex-direction: row;
     }
