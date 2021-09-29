@@ -1,11 +1,17 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
 }
 
 ul {
     list-style: none;
-    display: flex;
+    padding: 0%;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -22,7 +28,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 5rem;
+    height: 4rem;
 }
 
 
@@ -41,7 +47,7 @@ header {
 
 .icon {
     color: rgb(88, 88, 88);
-    padding: 5px;
+    font-size: 4rem;
 }
 
 .icon:hover {
@@ -57,16 +63,39 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+}
+
+.main-nav a {
+    color: rgb(65, 65, 65);
+    padding: 3px;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
 }
 
 .main-nav li {
-    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    align-items: center;
+    font-size: 0.9rem;
+    width: 33%;
 }
 
 .main-nav ul {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.material-icons.md-36 {
+    font-size: 2.5rem;
+    color: rgb(104, 104, 104);
+    margin-bottom: -8px;
 }
 
 /* ---- MAIN CONTENT ---- */
@@ -75,19 +104,52 @@ header {
 /* ---- FOOTER ---- */
 
 footer {
-    background-color:  rgb(228, 228, 228);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(228, 228, 228);
     font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.fot-nav ul{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 0%;
+.fot-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin-top: 1rem;
+    color: black;
 }
 
-.fot-nav li{
+.fot-nav li {
     padding: 0.5rem;
+}
+
+.download-button {
+    width: 6rem;
+}
+
+.app {
+    font-size: 0.5rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider{
+    width: 20rem;
+    height: 1px;
+    background-color: indigo;
+}
+
+.copyright {
+    margin-bottom: 1rem;
 }
 
 /* ---- FOOTER ---- */

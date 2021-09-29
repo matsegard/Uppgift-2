@@ -5,51 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>craigslist</title>
     <link rel="stylesheet" href="./index.css">
+
+    <!---- ICONS ---->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!---- ICONS ---->
+
+    <!---- FONTS ---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!---- FONTS ---->
 </head>
-<header>
-    <div class="header-left">
-        <img class="craiglogo" src="logo.png" alt="logo">
-    </div>
-    <div class="header-right">
-        <nav class="top-nav">
-            <div class="menu">
-                <a href="#"><i class="icon fas fa-search"></i></a>
-                <a href="#"><i class="icon fas fa-bars"></i></a>
-            </div>
-
-            <ul class="nav-right">
-                <li><input class="search" type="text"></li>
-                <li>Account</li>
-                <li>Post</li>
-                <li>Country</li>
-            </ul>
-        </nav>
-    </div>
-
-</header>
 
 <body>
+
+    <header>
+        <div class="header-logo">
+            <img class="craiglogo" src="logo.png" alt="logo">
+        </div>
+        <div class="header-right">
+            <nav class="top-nav">
+                <div class="menu">
+                    <a href="#"><span class="icon material-icons">search</span></a>
+                    <a href="#"><span class="icon material-icons">menu</span></a>
+                </div>
+
+                <ul class="nav-right">
+                    <li><input class="search" type="text"></li>
+                    <li>Account</li>
+                    <li>Post</li>
+                    <li>Country</li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
     <main>
         <nav class="main-nav">
-            <ul>
-                <li>COMMUNITY</li>
-                <li>SERVICES</li>
-                <li>FORUMS</li>
-                <li>HOUSING</li>
-                <li>FOR SALE</li>
-                <li>JOBS</li>
+            <ul class="flex flex-wrap justify-center">
+                <li><a href="#">
+                        <div class="category"> <span class="material-icons md-36">people</span></div><p>Community</p>
+                    </a></li>
+                <li><a href="#">
+                        <div class="category"> <span class="material-icons md-36">home_repair_service</span></div><p>Service</p>
+                    </a></li>
+                <li><a href="#">
+                        <div class="category"> <span class="material-icons md-36">forum</span></div><p>Forum</p>
+                    </a></li>
+                <li><a href="#">
+                        <div class="category"> <span class="material-icons md-36">home</span></div><p>Housing</p>
+                    </a></li>
+                <li><a href="#">
+                        <div class="category"> <span class="material-icons md-36">point_of_sale</span></div><p>For Sale</p>
+                    </a></li>
+                <li><a href="#">
+                        <div class="category"> <span class="material-icons md-36">work</span></div><p>For Sale</p>
+                    </a></li>
             </ul>
         </nav>
+
     </main>
 
 
 </body>
 
 <footer>
+   
     <nav class="fot-nav">
         <ul>
             <li>Help</li>
@@ -60,8 +87,18 @@
             <li>About</li>
         </ul>
     </nav>
+<div class="divider container"></div>
+    <div class="app">
+        <h2>Try the official craigslist mobile app for iOS and Android.</h2>
+        <div class="download">
+        <img class="download-button" src="android.png" alt="app">
+        <img class="download-button" src="ios.png" alt="">
+    </div>
+    </div>
 
-  <div class="copyright container"><p>© 2021 craigslist</p></div>  
+    <div class="copyright container">
+        <p>© 2021 craigslist</p>
+    </div>
 
 </footer>
 

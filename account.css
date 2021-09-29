@@ -1,54 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
 
-* {padding: 0;
-    margin: 0;}
+html {
 
-html{
-    
     height: 100%;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
 }
 
-main{
-    
+main {
+
     flex-direction: column;
     height: 100%;
     width: 100%;
-    
-   
-    
-    
+}
+
+h1{ 
+    list-style: disc;
+    padding: 1rem 0; 
+
 }
 
 form {
-     display: flex;
-     width: 100%;
-     max-width: 380px;
-     flex-direction: column;   
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    flex-direction: column;
 }
 
-label{
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+label {
     padding-top: 1rem;
     padding-bottom: .5rem;
     padding-left: .5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #333;
 }
 
-input{
+input {
     height: 2rem;
     border-radius: 100px;
-    background-color: lightgrey;
+    background-color:lightgrey;
     border: none;
+    padding-left: 1rem;
+    border-color: none;
     
-}
+    }
 
 
-
-button{
+button {
     border-radius: 100rem;
     background: rgb(129, 131, 134);
     color: white;
@@ -56,51 +69,56 @@ button{
     border: none;
     margin-top: 1rem;
     text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
 }
-p{  display: flex;
+
+p {
+    display: flex;
     margin-top: 1rem;
     justify-content: center;
-    
-    
-}
 
-p a{
+
+}
+p a {
     color: black;
     padding: 0 1rem
+}
+footer {
+    margin-top: 4.2rem;
     
 }
-    
 
+/*hover/focus*/
+input:focus {
+    background-color: rgb(226, 226, 226);
+     outline: none; 
+     box-shadow: 1px 1px;
+     
+    }
 
-
-.creatanaccount{
-    border: 2px solid  #6A2983;
+.creatanaccount {
+    border: 2px solid #6A2983;
     color: rgb(63, 61, 61);
     background-color: transparent;
-   
 }
 
-  footer{
-      
-  }
 .sign-in:hover {
-    background-color:blue;
-    
+    background-color:#6A2983;
+    }
 
+.cancel:hover {
+    background-color:rgb(39, 38, 38);
+    color: white;
 }
 
-.cancel:hover{
-    background-color: red;
-}
-.creatanaccount:hover{
+.creatanaccount:hover {
     background-color: #6A2983;
     color: white;
-
 }
 
-p a:hover{
-    
+    /*responsiv*/
+@media(min-width: 500px){
+    form{ max-width: 380px;
+
+    }
 }
 

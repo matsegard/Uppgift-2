@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,12 +11,20 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
 </head>
+
 <body>
-    
+
     <header>
         <div class="header-left">
-            <img class="craiglogo" src="logo.png" alt="logo">
+            <a href="index.html">
+                <img class="craiglogo" src="logo.png" alt="logo">
+            </a>
         </div>
         <div class="header-right">
             <nav class="top-nav">
@@ -24,7 +32,7 @@
                     <a href="#"><i class="icon fas fa-search"></i></a>
                     <a href="#"><i class="icon fas fa-bars"></i></a>
                 </div>
-    
+
                 <ul class="nav-right">
                     <li><input class="search" type="text"></li>
                     <li>Account</li>
@@ -33,46 +41,48 @@
                 </ul>
             </nav>
         </div>
-    
+
     </header>
 
-    <main class="container">
+    <main class="login">
         <h1>Sign in</h1>
-         <form>
-             
-              <label for="email"></label>
-              <input type="Email" name="Email" id="Email" placeholder="Email">
+        <form>
 
-              <label for="password"></label>
-              <input typ="text" name="password" id="password" placeholder="Password">
+            <label for="email"></label>
+            <input type="Email" name="Email" id="Email" placeholder="Email">
 
-              <button type="submit" class="sign-in">Sign in</button>
-              <button type="submit" class="cancel">Cancel</button>
-              <p>
-                  <a href="#">Forgot email?</a>
-                  <a href="#">Forgot password?</a>
-              </p>
-              <button type="submit" class="creatanaccount"> Creat an account</button>
+            <label for="password"></label>
+            <input typ="text" name="password" id="password" placeholder="Password">
 
-         </form>
+            <button type="submit" class="sign-in">Sign in</button>
+            <button type="submit" class="cancel">Cancel</button>
+            <p>
+                <a href="#">Forgot email?</a>
+                <a href="#">Forgot password?</a>
+            </p>
+            <button type="submit" class="creatanaccount"> Creat an account</button>
+
+        </form>
 
     </main>
     <footer>
         <nav class="fot-nav">
             <div class="fot-left">
-    <ul>
-        <li>Help</li>
-        <li>Safety</li>
-        <li>Privacy</li>
-        <li>Feedback</li>
-        <li>Terms</li>
-        <li>About</li>
-    </ul>
+                <ul>
+                    <li>Help</li>
+                    <li>Safety</li>
+                    <li>Privacy</li>
+                    <li>Feedback</li>
+                    <li>Terms</li>
+                    <li>About</li>
+                </ul>
             </div>
         </nav>
-    
+        <div class="copyright container">
+            <p>© 2021 craigslist</p>
+        </div>
     </footer>
-    </body>
-        
-   
+</body>
+
+
 </html>
