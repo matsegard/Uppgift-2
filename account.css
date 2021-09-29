@@ -13,11 +13,11 @@ body{
 }
 
 main{
-    display: flex;
+    
     flex-direction: column;
     height: 100%;
     width: 100%;
-    align-items: center;
+    
    
     
     
@@ -27,11 +27,7 @@ form {
      display: flex;
      width: 100%;
      max-width: 380px;
-     flex-direction: column;
-     
-    
-    
-   
+     flex-direction: column;   
 }
 
 label{
@@ -63,12 +59,32 @@ button{
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
 }
-
-.creatanaccount{
-    background-color: blue;
+p{  display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    
+    
 }
 
+p a{
+    color: black;
+    padding: 0 1rem
+    
+}
+    
 
+
+
+.creatanaccount{
+    border: 2px solid  #6A2983;
+    color: rgb(63, 61, 61);
+    background-color: transparent;
+   
+}
+
+  footer{
+      
+  }
 .sign-in:hover {
     background-color:blue;
     
@@ -77,5 +93,14 @@ button{
 
 .cancel:hover{
     background-color: red;
+}
+.creatanaccount:hover{
+    background-color: #6A2983;
+    color: white;
+
+}
+
+p a:hover{
+    
 }
 
