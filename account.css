@@ -101,6 +101,18 @@ input:focus {
     background-color: transparent;
 }
 
+<<<<<<< HEAD
+=======
+  footer{
+   
+        clear: both;
+        position: relative;
+        
+        margin-top: 10px;
+    }
+      
+  
+>>>>>>> ea11ab9e107a5537c570b05657b1b3020b081599
 .sign-in:hover {
     background-color:#6A2983;
     }
