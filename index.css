@@ -51,7 +51,7 @@ header {
 }
 
 .icon:hover {
-    color: #6A2983;
+    color: #783d8f;
 }
 
 /* ---- HEADER ---- */
@@ -63,17 +63,20 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin-top: 4rem;
 }
 
 .main-nav a {
-    color: rgb(65, 65, 65);
-    padding: 3px;
+    color: rgb(104, 104, 104);
+    padding: 0.1rem;
 }
 
-.category {
-    display: flex;
-    justify-content: center;
+.main-nav a:hover {
+    color: #8e5da1;
+}
+
+.main-nav p {
+    margin: 0;
 }
 
 .main-nav li {
@@ -94,8 +97,22 @@ header {
 
 .material-icons.md-36 {
     font-size: 2.5rem;
-    color: rgb(104, 104, 104);
-    margin-bottom: -8px;
+    margin-bottom: -0.5rem;
+}
+
+.country {
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 4rem;
+    border: none;
+    background-color: #8e5da1;
+    color: rgb(228, 228, 228);
+}
+
+.country:hover {
+    background-color: #9068a0;
 }
 
 /* ---- MAIN CONTENT ---- */
@@ -125,27 +142,31 @@ footer {
     color: black;
 }
 
-.fot-nav li {
+.fot-nav a {
     padding: 0.5rem;
+    color: rgb(83, 83, 83);
 }
 
+.fot-nav a:hover {
+    color: #9068a0;
+}
 .download-button {
     width: 6rem;
 }
 
 .app {
     font-size: 0.5rem;
-    margin-top: 1rem;
+    margin-top: 0.7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.divider{
+.divider {
     width: 20rem;
     height: 2px;
-    background-color: indigo;
+    background-color: #9068a0;
 }
 
 .copyright {
@@ -160,7 +181,7 @@ footer {
     .search {
         background-color: rgb(255, 255, 255);
         border: none;
-        border-radius: 15px;
+        border-radius: 1rem;
         height: 1.5rem;
         width: 10rem;
         margin-right: 0.5rem;
@@ -174,7 +195,7 @@ footer {
     }
 
     .header-right li {
-        padding: 5px;
+        padding: 0.3rem;
         display: flex;
         flex-direction: row;
     }
