@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
+    background-color: rgb(252, 252, 252)
 }
 
 ul {
@@ -102,7 +103,7 @@ header {
 
 .button1 {
     margin: 0.6rem;
-    width: 20rem;
+    width: 21rem;
     height: 2rem;
     border-radius: 1.5rem;
     border: none;
@@ -111,11 +112,12 @@ header {
 }
 
 .buttons{
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(252, 252, 252);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 1.5rem;
 }
 
 .button1:hover {
@@ -207,6 +209,7 @@ footer {
         width: 15rem;
         padding-left: 0.7rem;
         outline-color: #8e5da1;
+        outline-width: 0.1rem;
     }
 
     .header-right ul {
@@ -220,6 +223,15 @@ footer {
         padding: 0.3rem;
         display: flex;
         flex-direction: row;
+        margin-right: 1rem;
+    }
+
+    .nav-right a{
+        color: rgb(51, 51, 51);
+    }
+
+    .nav-right a:hover{
+        color: #8e5da1;
     }
 
     .craiglogo {
@@ -236,9 +248,10 @@ footer {
     /* ---- MAIN min 800px ---- */
 
     .buttons{
-        background-color: rgb(228, 228, 228);
+        background-color: rgb(252, 252, 252);
         display: flex;
         justify-content: center;
+        margin-top: 2rem;
     }
 
     .button1{
@@ -253,7 +266,7 @@ footer {
     }
 
     .main-nav li {
-        margin: 1rem;
+        margin: 1.3rem;
         font-size: 0.9rem;
     }
 
@@ -266,7 +279,7 @@ footer {
     .main-nav {
         display: flex;
         justify-content: center;
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 
     /* ---- MAIN min 800px ---- */
@@ -294,6 +307,16 @@ footer {
     height: 2rem;
     width: 27rem;
     height: 2.5rem;
+}
+
+.main-nav li {
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+    font-size: 0.9rem;
+}
+
+.main-nav{
+    margin-top: 2rem;
 }
 
 }
