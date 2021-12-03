@@ -5,84 +5,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./header.css">
-    <link rel="stylesheet" href="./account.css">
-    <link rel="stylesheet" href="./index.css">
+    <title>craigslist - Account Login</title>
+    <!-- TAILWIND -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- TAILWIND -->
+
+    <!-- ICONS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- ICONS -->
+
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
-
+    <!-- FONTS -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS -->
 </head>
 
 <body>
-
     <header>
-        <div class="header-left">
-            <a href="index.html">
-                <img class="craiglogo" src="logo.png" alt="logo">
-            </a>
+        <!-- CRAIGSLIST HEADER LOGO -->
+        <div class="header-logo">
+            <a href="./index.html"><img class="craiglogo" src="./img/logo.png" alt="logo"></a>
         </div>
+        <!-- CRAIGSLIST HEADER LOGO -->
         <div class="header-right">
             <nav class="top-nav">
-                <div class="menu">
-                    <a href="#"><i class="icon fas fa-search"></i></a>
-                    <a href="#"><i class="icon fas fa-bars"></i></a>
+                <div class="meny">
+                    <a href="#"><span class="icon material-icons">search</span></a>
+                    <!-- DROPDOWN MENU -->
+                    <ul class="menu">
+                        <li>
+                            <a href="#"><span class="icon material-icons">menu</span></a>
+                            <ul>
+                                <li class="p-2"><a class="pl-5" href="./account.html">Account</a></li>
+                                <li class="p-2"><a class="pl-5" href="#">Post</a></li>
+                                <li class="p-2 text-center"><a class="pl-5" href="#">Country</a></li>
+                                <li class="p-2"><a class="pl-5" href="#">Event</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-
+                <!-- DROPDOWN MENU -->
+                
                 <ul class="nav-right">
-                    <li><input class="search" type="text"></li>
-                    <li>Account</li>
-                    <li>Post</li>
-                    <li>Country</li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Post</a></li>
+                    <li><a href="#">Country</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><input class="search" type="text" placeholder="Search"></li>
                 </ul>
             </nav>
         </div>
 
     </header>
+    <main>
 
-    <main class="login">
-        <h1>Sign in</h1>
-        <form>
+        <!-- TAILWIND FORM -->
+        <div class="flex justify-center ">
+            <div class="mt-12 w-60 sm:w-96 md h-auto">
 
-            <label for="email"></label>
-            <input type="Email" name="Email" id="Email" placeholder="Email">
+                <form class=" mx-auto justify-content">
 
-            <label for="password"></label>
-            <input typ="text" name="password" id="password" placeholder="Password">
+                    <input class=" mx-auto w-full h-8 pl-3 rounded-full flex bg-gray-200 
+                 mt-3 hover:bg-cyan-600 focus:outline-none focus:bg-gray-100" type="text" placeholder="Email" />
 
-            <button type="submit" class="sign-in">Sign in</button>
-            <button type="submit" class="cancel">Cancel</button>
-            <p>
-                <a href="#">Forgot email?</a>
-                <a href="#">Forgot password?</a>
-            </p>
-            <button type="submit" class="creatanaccount"> Creat an account</button>
+                    <input class=" mx-auto w-full flex h-8 pl-3 rounded-full bg-gray-200
+                 mt-6 hover:bg-cyan-600 focus:outline-none focus:bg-gray-100" type="text" placeholder="Password" />
 
-        </form>
+                    <button class=" mx-auto w-full justify-center h-8 py-1 text-sm text-black-600 font-semibold
+                  rounded-full border border-purple-600 hover:text-white hover:bg-purple-600
+                  hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600
+                  focus:ring-offset-2 flex mt-6">Sign in</button>
 
-    </main>
-    <footer>
-        <nav class="fot-nav">
-            <div class="fot-left">
-                <ul>
-                    <li>Help</li>
-                    <li>Safety</li>
-                    <li>Privacy</li>
-                    <li>Feedback</li>
-                    <li>Terms</li>
-                    <li>About</li>
-                </ul>
+                    <button
+                        class=" mx-auto w-full justify-center flex h-8 py-1 text-sm mt-3 mb-3 text-black-600 font-semibold
+                   rounded-full border border-purple-600 hover:text-white hover:bg-purple-600 
+                   hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Cancel
+                    </button>
+                    <div class=" flex mx-auto m-6">
+                        <a href="#" class="mx-auto">Forgot email?</a>
+                        <a href="#" class=" mx-auto">Forgot password?</a>
+                    </div>
+                    <button class="text-center text-justify mx-auto w-full justify-center py-2 flex bg-purple-600 text-sm 
+                    text-white font-semibold rounded-full border
+                   border-purple-200 hover:text-white hover:bg-gray-400 hover:border-transparent focus:outline-none
+                   focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 flex mt-3 animate-pulse">Create an Account
+                    </button>
+                </form>
             </div>
+            <!-- TAILWIND FORM -->
+        </div>
+    </main>
+ <!-- FOOTER NAVIGATION -->
+  <footer>
+        <nav class="fot-nav">
+            <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
         </nav>
+        <div class="divider container"></div>
+        <!-- FOOTER NAVIGATION -->
+        
+        <!-- DOWNLOAD APP -->
+        <div class="app">
+            <h2>Try the official craigslist mobile app for iOS and Android.</h2>
+            <div class="download">
+                <img class="download-button" src="./img/android.png" alt="google play app download">
+                <img class="download-button" src="./img/appstore.png" alt="appstore app download">
+            </div>
+        </div>
+        <!-- DOWNLOAD APP -->
         <div class="copyright container">
             <p>© 2021 craigslist</p>
         </div>
+
     </footer>
 </body>
-
 
 </html>

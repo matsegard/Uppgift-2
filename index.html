@@ -6,57 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>craigslist</title>
-    <link rel="stylesheet" href="./index.css">
+    <!-- TAILWIND LINK -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- TAILWIND LINK -->
 
-    <!---- ICONS ---->
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- CSS -->
+
+    <!-- MATERIAL ICONS LINK -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- MATERIAL ICONS LINK -->
 
-    <!---- ICONS ---->
-
-    <!---- FONTS ---->
+    <!-- GOOGLE FONTS LINK -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <!---- FONTS ---->
+    <!-- GOOGLE FONTS LINK -->
+
 </head>
 
-<body> 
+<body class="overflow-x-hidden">
 
     <header>
         <div class="header-logo">
-            <img class="craiglogo" src="logo.png" alt="logo">
+            <img class="craiglogo" src="./img/logo.png" alt="logo">
         </div>
         <div class="header-right">
             <nav class="top-nav">
-                <div class="menu">
+                <div class="meny">
                     <a href="#"><span class="icon material-icons">search</span></a>
-                    <a href="#"><span class="icon material-icons">menu</span></a>
-                </div>
+                    <!-- DROPDOWN MENU -->
+                    <ul class="menu">
+                        <li>
+                            <a href="#"><span class="icon material-icons">menu</span></a>
+                            <ul>
+                                <li class="p-2"><a class="pl-5" href="./account.html">Account</a></li>
+                                <li class="p-2"><a class="pl-5" href="#">Post</a></li>
+                                <li class="p-2 text-center"><a class="pl-5" href="#">Country</a></li>
+                                <li class="p-2"><a class="pl-5" href="#">Event</a></li>
 
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- DROPDOWN MENU -->
                 <ul class="nav-right">
-                    <li><a href="#">Account</a></li>
+                    <li><a href="./account.html">Account</a></li>
                     <li><a href="#">Post</a></li>
                     <li><a href="#">Country</a></li>
+                    <li><a href="#">Event</a></li>
                     <li><input class="search" type="text" placeholder="Search"></li>
                 </ul>
             </nav>
         </div>
 
     </header>
-
     <main>
-       <div class="buttons">
-        <div><button class="button1">CHOOSE COUNTRY</button></div>
-        <div><button class="button1">CREATE A POSTING</button></div>    
-    </div>
+        <!-- TAILWIND BUTTONS -->
+        <div class="flex-col w-72 sm:w-96 mx-auto mt-14">
+            <button class=" w-full justify-center py-2 bg-purple-600 text-sm text-white font-semibold
+               rounded-full border border-purple-200 hover:text-white hover:bg-purple-500
+               hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600
+               focus:ring-offset-2 flex mt-3">CHOOSE COUNTRY</button>
+            <button
+                class=" w-full py-2 justify-center flex text-sm mt-3 bg-purple-600 text-white font-semibold
+                rounded-full border border-purple-200 hover:text-white hover:bg-purple-500 
+                hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">CREATE
+                A POSTING</button>
+        </div>
+        <!-- TAILWIND BUTTONS -->
+
+        <!-- ICONS FOR MAIN NAVIGATION -->
         <nav class="main-nav">
             <ul>
                 <li><a href="#">
                         <span class="material-icons md-36">people</span>
                         <p>Community</p>
-                        </div>
                     </a></li>
                 <li><a href="#">
                         <span class="material-icons md-36">forum</span>
@@ -80,9 +109,9 @@
                     </a></li>
             </ul>
         </nav>
-
+        <!-- ICONS FOR MAIN NAVIGATION -->
     </main>
-
+    <!-- FOOTER NAVIGATION -->
     <footer>
         <nav class="fot-nav">
             <ul>
@@ -94,21 +123,22 @@
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
-        <div class="divider container"></div>
+        <!-- FOOTER NAVIGATION -->
+        <div class="divider container-css"></div>
+        <!-- DOWNLOAD APP -->
         <div class="app">
             <h2>Try the official craigslist mobile app for iOS and Android.</h2>
             <div class="download">
-                <img class="download-button" src="android.png" alt="app">
-                <img class="download-button" src="ios.png" alt="">
+                <img class="download-button" src="./img/android.png" alt="google play app download">
+                <img class="download-button" src="./img/appstore.png" alt="appstore app download">
             </div>
         </div>
-    
-        <div class="copyright container">
+        <!-- DOWNLOAD APP -->
+        <div class="copyright container-css">
             <p>© 2021 craigslist</p>
         </div>
-    
+
     </footer>
-    
 </body>
 
 </html>

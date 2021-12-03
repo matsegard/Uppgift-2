@@ -1,0 +1,81 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fot-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin-top: 1.5rem;
+}
+
+.fot-nav a {
+    padding: 0.5rem;
+    color: rgb(29, 29, 29);
+    font-size: 0.9rem;
+}
+
+.fot-nav a:hover {
+    color: #7C3AED;
+}
+
+.download-button {
+    width: 6rem;
+}
+
+.download {
+    flex-direction: row;
+    display: flex;
+}
+
+.app {
+    font-size: 0.7rem;
+    margin-top: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOOTER PURPLE DIVIDER */
+.divider {
+    width: 20rem;
+    height: 2px;
+    margin-top: 0.7rem;
+    background-color: #9068a0;
+}
+/* FOOTER PURPLE DIVIDER */
+
+.copyright {
+    margin-top: 0.7rem;
+    margin-bottom: 0.4rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 800px) {
+
+    .divider {
+        width: 40rem;
+        height: 2px;
+        background-color: #9068a0;
+    }
+
+    .fot-nav a {
+        padding: 0.5rem;
+        margin: 1rem;
+        color: rgb(83, 83, 83);
+    }
+
+}
